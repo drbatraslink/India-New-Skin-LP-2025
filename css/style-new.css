@@ -691,7 +691,7 @@ a:hover{text-decoration: none;}
 /*====================================================*/
 .advance_skin_bg{margin-bottom:50px;padding-top:50px;}
 @media screen and (max-width:600px){
-.advance_skin_bg{margin-bottom:50px;padding-top:40px;padding-bottom:10px}
+.advance_skin_bg{margin-bottom:0px;padding-top:30px;}
 }
 .advance_main_heading{font-size:21px;font-weight:600;margin-bottom:5px; color: #000000;}
 .advance_main_subheading{font-size:18px;font-weight:600; color: #000000}
@@ -709,7 +709,7 @@ a:hover{text-decoration: none;}
 .advance_main_heading{font-size:18px;}
 .advance_main_subheading{font-size:16px;font-weight:600;margin-bottom:0}
 .vl-icon-line{border-left:0;display:none}
-.advance_list_list{margin-left:0;padding-left:25px}
+.advance_list_list{margin-left:0;padding-left:25px; margin-bottom: 0}
 .advance_list_list li{font-size:16px;padding:5px 2px}
 }
 @media screen and (max-width:992px){
@@ -719,7 +719,7 @@ a:hover{text-decoration: none;}
 .specialised_skin_treatments_sec{margin-top: 50px}
 .skin_treatment_img {border-radius: 16px}
 @media screen and (max-width:600px){
-.specialised_skin_treatments_sec{margin-bottom:50px;padding-top:40px;padding-bottom:10px}
+.specialised_skin_treatments_sec{margin-top: 30px}
 }
 
 
