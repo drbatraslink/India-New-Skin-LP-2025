@@ -699,6 +699,7 @@ a:hover{text-decoration: none;}
 .advance_list_list{list-style-image:url('../images/list-style.webp');margin-left:0;padding-left:23px}
 .vl-icon-line{border-left:1px solid #554a46;height:125px;position:absolute;left:3%;margin-left:-3px;bottom:65px}
 #advance_skin_slider.owl-carousel .owl-item img{border-radius:16px; width: auto;}
+#advance_skin_slider.owl-carousel .owl-item .adavnce_treatment_logo{border-radius:0px; width: auto;}
 #advance_skin_slider .owl-next,#advance_skin_slider .owl-prev{position:absolute;top:-5px;height:100%}
 #advance_skin_slider .owl-prev{left:-15px;background-color:transparent!important}
 #advance_skin_slider .owl-next{right:-15px;background-color:transparent!important}
