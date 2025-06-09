@@ -46,9 +46,8 @@ a:hover{text-decoration: none;}
 .treatment_all_comm_div.banner_new_section h2{font-size:21px!important;font-weight:400;line-height:normal;color:#fff}
 .treatment_all_comm_div .talk_about_btn{width:auto;display:inline-block;margin:10px 0 0 0;padding:10px 30px;line-height:normal;color:#0c4679;border-radius:50px;font-weight:600;font-size:18px!important;text-align:center;border:none;background-color:#fff!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
 .treatment_all_comm_div .talk_about_btn:hover{color:#1f83c5!important}
-.banner_list_item_google_rating{list-style:none;padding-inline-start:0px;display:flex;align-items:center;margin-bottom:10px;margin-top:15px}
-.banner_list_item_google_rating li{font-size:18px;font-weight:600;color:#fff;padding-right:10px}
-.banner_list_item_google_rating li img{max-width:178px!important;width:178px!important}
+.banner_new_section .banner_list_item_google_rating{list-style:none;padding-inline-start:0px;display:flex;align-items:center;margin-bottom:10px;margin-top:15px;font-size:18px;font-weight:600;color:#fff;padding-right:10px}
+.banner_list_item_google_rating img{max-width:178px!important;width:178px!important}
 .banner_area{max-width:350px;width:350px;margin:auto}
 @media (max-width:1440px){
 .treatment_all_comm_div.banner_new_section h1{font-size:38px!important;font-weight:700;line-height:normal;color:#fff}
