@@ -183,7 +183,7 @@ $('#googlerating_slider').owlCarousel({
   loop: true,
   responsiveClass: true,
   nav: true,
-  margin: 0,
+  margin: 15,
   autoplay: true,
   autoplayTimeout: 8000,
   smartSpeed: 400,
