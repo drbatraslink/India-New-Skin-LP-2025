@@ -142,7 +142,7 @@ a:hover{text-decoration: none;}
 .offer-background-sec{padding-top:5px;padding-bottom:5px}
 }
 .after_after_section .icon_banner_foot_slider .owl-dots{display:none}
-.after_after_section .icon_banner_foot_slider .owl-item img{width:auto}
+.after_after_section .icon_banner_foot_slider .owl-item img{width:20%;}
 .after_after_section .icon_banner_foot_slider .owl-next,.after_after_section .icon_banner_foot_slider .owl-prev{position:absolute;top:-5px;height:100%}
 .after_after_section .icon_banner_foot_slider .owl-prev{left:-15px;background-color:transparent!important}
 .after_after_section .icon_banner_foot_slider .owl-next{right:-15px;background-color:transparent!important}
