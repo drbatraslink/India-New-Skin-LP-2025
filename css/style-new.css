@@ -155,7 +155,7 @@ a:hover{text-decoration: none;}
 /*==========================================*/
 .treatment_all_comm_div.before_after_slider{padding-top:40px}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-dots{display:none}
-.treatment_all_comm_div.before_after_slider .screenshot_slider .owl-item img{width:100%}
+.treatment_all_comm_div.before_after_slider .screenshot_slider .owl-item img{width:100%;  object-fit: cover;}
 .treatment_all_comm_div .screenshot_slider .owl-prev,.treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{position:absolute;top:-5px;height:100%}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-prev{left:-15px;background-color:transparent!important}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{right:-15px;background-color:transparent!important}
@@ -250,7 +250,7 @@ a:hover{text-decoration: none;}
 @media screen and (max-width:600px){
 .google_slider_sec{margin-top:30px;margin-bottom:30px}
 }
-#googlerating_slider .owl-item .item img{-webkit-transition:.3s;-o-transition:.3s;transition:.3s;-webkit-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8);opacity:1}
+#googlerating_slider .owl-item .item img{width: auto;}
 #googlerating_slider .owl-next,#googlerating_slider .owl-prev{position:absolute;top:-5px;height:100%}
 #googlerating_slider .owl-prev{left:-15px;background-color:transparent!important}
 #googlerating_slider .owl-next{right:-15px;background-color:transparent!important}
@@ -259,8 +259,6 @@ a:hover{text-decoration: none;}
 .google-rating-subheading{font-size:21px;font-weight:600;margin-bottom:0;padding-bottom:0}
 .google-rating-subheading small{font-weight:600;font-size:14px}
 .google-rating-small-title{font-weight:600;font-size:12px;color:#636363}
-.google-rating-box{min-height:180px;padding:20px;box-sizing:border-box}
-.google-rating-box img{display:block}
 @media screen and (max-width:600px){
 .google-rating-box{height:275px;margin:15px 0;padding:20px 8px 0;background-color:#fff;box-shadow:0 2px 8px rgb(194 194 194 / 30%)}
 }
