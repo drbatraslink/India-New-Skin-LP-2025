@@ -497,7 +497,7 @@ a:hover{text-decoration: none;}
 ul.nptabbs{margin:0;padding:0;float:left;list-style:none;width:100%;align-items:center;display:flex;align-items:center;border:1px solid #efefef;border-radius:12px}
 ul.nptabbs li{float:left;width:16.7%;cursor:pointer;padding:20px 0;text-align:center;font-size:15px;font-weight:600;line-height:20px;border-radius:0;border-right:1px solid #efefef;background-color:rgb(255 255 255 / 29%);color:#212121;position:relative}
 ul.nptabbs li:last-child{border-right:none}
-ul.nptabbs li.active::before{content:url(../images/dot-single.webp);display:inline-block;width:25px;font-size:25px!important;position:absolute;left:44%;bottom:15px}
+/*ul.nptabbs li.active::before{content:url(../images/dot-single.webp);display:inline-block;width:25px;font-size:25px!important;position:absolute;left:44%;bottom:15px}*/
 ul.nptabbs li img{padding-bottom:15px}
 .tabb_last{border-right:1px solid #1b5d6a}
 ul.nptabbs li:hover{background:#1b4877;padding:30px 0;color:#fff;font-weight:600;border:1px solid #1b4877;box-shadow:0 1px 9px 0 rgb(27 72 119 / 61%);border-radius:16px}
