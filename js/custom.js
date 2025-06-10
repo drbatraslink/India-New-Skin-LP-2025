@@ -28,32 +28,48 @@ $('.icon_banner_foot_slider').owlCarousel({
   },
 });
 // Screenshot carousel initialization
-$('.screenshot_slider').owlCarousel({
-  loop: true,
-  responsiveClass: true,
-  nav: true,
-  margin: 5,
-  autoplay: true,
-  autoplayTimeout: 6000,
-  smartSpeed: 400,
-  navText: ["<img src='images/previmage.webp' alt='001 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='001 next' width='50' height='50' />", ],
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    768: {
-      items: 2
-    },
-    1024: {
-      items: 2
-    },
-    1200: {
-      items: 3
-    },
-  },
+function initOwl() {
+  $('.screenshot_slider').owlCarousel({
+    loop: false,
+    nav: true,
+    margin: 5,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    smartSpeed: 400,
+    navText: [
+      "<img src='images/previmage.webp' alt='prev' width='50' height='50' />",
+      "<img src='images/nextimage.webp' alt='next' width='50' height='50' />"
+    ],
+    responsive: {
+      0: { items: 1 },
+      768: { items: 2 },
+      1200: { items: 3 }
+    }
+  });
+}
+
+initOwl();
+
+// Filter Tabs
+$('.tab-btn').on('click', function () {
+  var filter = $(this).data('filter');
+  $('.tab-btn').removeClass('active');
+  $(this).addClass('active');
+
+  $('.screenshot_slider .owl-item').each(function () {
+    var $item = $(this);
+    var category = $item.find('.item').attr('class');
+
+    if (filter === 'all') {
+      $item.show();
+    } else {
+      if (category.indexOf(filter) > -1) {
+        $item.show();
+      } else {
+        $item.hide();
+      }
+    }
+  });
 });
 
 function toggleOwlCarousel() {
@@ -124,10 +140,11 @@ $('#testimonilas_slider').owlCarousel({
 });
 // Advance skin carousel initialization
 $('#advance_skin_slider').owlCarousel({
-  loop: false,
+  loop: true,
   responsiveClass: true,
   nav: true,
   margin: 0,
+  autoHeight: false,
   autoplay: true,
   autoplayTimeout: 8000,
   smartSpeed: 400,

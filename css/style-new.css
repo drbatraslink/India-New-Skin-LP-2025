@@ -16,9 +16,30 @@ header{background:#f6f7fb;position:fixed;top:0;z-index:1000!important}
 .terms-con-font-cls{color:#1a75ac}
 .carousel-indicators li{background-color:#2876a9;opacity:1}
 .carousel-indicators .active{background-color:#e41225;opacity:1}
-.head-main-tel{color:#0c4679;font-weight:700;text-decoration:none}
-.head-main-tel:hover{color:#1f83c5;text-decoration:none}
-.headerno-cls{font-size:30px;color:#0c4679;margin-bottom:0}
+
+.head-main-tel{padding:6px 15px;float:right;color:#0c4679; font-weight: 600; border:1px solid #0c4679;border-radius:25px;line-height:normal; font-size: 24px; text-decoration:none;margin-bottom:0;animation:blinkWithColorHed 1.9s ease-in-out infinite;}
+.head-main-tel:hover{color:#173b63;text-decoration:none}
+.head-main-tel img{animation:blinkWithColorHedImg 1.9s ease-in-out infinite;}
+/*.headerno-cls{font-size:24px;font-weight:400;color:#0c4679;margin-bottom:0;float:right;border:1px solid #0c4679;padding:6px 15px;border-radius:25px;line-height:normal;}*/
+@keyframes blinkWithColorHed{
+0%,100%{ background-color: transparent;}
+50%{background-color: #0c4679; color: #ffffff;}
+}
+@keyframes blinkWithColorHedImg{
+0%,100%{ filter: none;}
+50%{ filter:brightness(0) invert(1)}
+}
+.mobile-call-icon{border:1px solid #0c4679;text-align:center;padding:6px;border-radius:20px;width:36px;height:36px;line-height:19px;float:right;animation:blinkWithColorHedMImg 1.9s ease-in-out infinite;}
+.mobile-call-icon img{animation:blinkWithColorHedImgM 1.9s ease-in-out infinite;}
+@keyframes blinkWithColorHedMImg{
+0%,100%{ background-color: #0c4679; }
+50%{ background-color: #ffffff;}
+}
+@keyframes blinkWithColorHedImgM{
+0%,100%{  filter:brightness(0) invert(1)}
+50%{filter: none; }
+}
+
 .treatment_all_heading_page{margin-bottom:10px;font-size:32px!important;color:#000;font-weight:600}
 @media (max-width:1440px){
 .treatment_all_heading_page{margin-bottom:8px;font-size:30px!important;color:#000;font-weight:600}
@@ -41,85 +62,52 @@ a:hover{text-decoration: none;}
 /*==========================================*/
 /* New Banner css*/
 /*==========================================*/
-.treatment_all_comm_div.banner_new_section{padding:30px 0;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('../images/banner_bg.webp');background-color:#0c4679;background-size:cover;background-position:center left;background-repeat:no-repeat}
-.treatment_all_comm_div.banner_new_section h1{font-size:42px!important;font-weight:700!important;line-height:normal!important;color:#fff}
-.treatment_all_comm_div.banner_new_section h2{font-size:21px!important;font-weight:400;line-height:normal;color:#fff}
-.treatment_all_comm_div .talk_about_btn{width:auto;display:inline-block;margin:10px 0 0 0;padding:10px 30px;line-height:normal;color:#0c4679;border-radius:50px;font-weight:600;font-size:18px!important;text-align:center;border:none;background-color:#fff!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
-.treatment_all_comm_div .talk_about_btn:hover{color:#1f83c5!important}
-.banner_new_section .banner_list_item_google_rating{list-style:none;padding-inline-start:0px;display:flex;align-items:center;margin-bottom:10px;margin-top:15px;font-size:18px;font-weight:600;color:#fff;padding-right:10px}
-.banner_list_item_google_rating img{max-width:178px!important;width:178px!important}
-.banner_area{max-width:350px;width:350px;margin:auto}
-@media (max-width:1440px){
-.treatment_all_comm_div.banner_new_section h1{font-size:38px!important;font-weight:700;line-height:normal;color:#fff}
-.treatment_all_comm_div .talk_about_btn{width:auto;display:inline-block;margin:10px 0 0 0;padding:10px 30px;line-height:normal;color:#0c4679;border-radius:50px;font-weight:600;font-size:18px!important;text-align:center;border:none;background-color:#fff!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
+.banner-section{background:url(../images/banner-bg-hair.webp) center center no-repeat;padding: 15px 0}
+.banner-section .banner-content{background:rgb(0 41 81 / 80%);padding:30px 20px;margin-top:70px;margin-bottom:70px;border-radius:24px}
+.banner-section .banner-content h1{font-size:16px;color:#fff;font-weight:400}
+.banner-section .banner-content h2{font-size:28px;color:#fff;font-weight:700}
+.banner-section .banner-content p{font-size:16px;color:#fff;font-weight:400}
+.banner-section .banner-content .most-loved-para{font-size:21px;margin-bottom:15px;margin-top:0px}
+.banner-section .google-review{padding:5px;position:absolute;right:0;top:100px;background:linear-gradient(270deg,#173d5b 30%,#0d2334 100%);border-radius:40px 0 0 40px;display:inline-flex;align-items:center}
+.banner-section .google-review p{margin-bottom:0;margin-left:5px;font-size:12px;color:#fff;line-height:21px;font-weight:600}
+.banner-section .whatsapp-btn{margin-top:20px;padding:8px 20px;background-color:transparent;align-items:center;display:inline;gap:4px;color:#fff;font-size:16px;font-weight:700;border-radius:25px;border:1px solid #fff;animation:blinkWithColor 1.9s ease-in-out infinite;}
+.banner-section .whatsapp-btn span{animation:blinkWithColorImg 1.9s ease-in-out infinite;}
+/*@keyframes blinkWithColor{
+0%,100%{color:#ffffff; background-color: transparent; border: 1px solid #ffffff;}
+50%{color:#25d366;background-color: transparent; border: 1px solid #25d366;}
 }
-@media (max-width:992px){
-.treatment_all_comm_div.banner_new_section h1{font-size:32px!important;font-weight:700;line-height:normal;color:#fff}
-.treatment_all_comm_div.banner_new_section h2{font-size:21px!important;font-weight:400;line-height:normal;color:#fff}
-.treatment_all_comm_div .talk_about_btn{width:auto;display:inline-block;margin:10px 0 0 0;padding:8px 30px;line-height:normal;color:#0c4679;border-radius:50px;font-weight:600;font-size:16px!important;text-align:center;border:none;background-color:#fff!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
+@keyframes blinkWithColorImg{
+0%,100%{opacity: 1;}
+50%{opacity: 0.5;}
+}*/
+.whatsapp-icon{width:24px;height:24px}
+.google-icon{width:42px;height:42px}
+@media (min-width:768px){
+.whatsapp-icon{width:28px;height:28px}
+.google-icon{width:52px;height:52px}
 }
-@media (max-width:600px){
-.treatment_all_comm_div.banner_new_section{margin-top:55px}
-.treatment_all_comm_div.banner_new_section h1{font-size:26px!important;font-weight:700;line-height:normal;color:#fff;text-align:center}
-.treatment_all_comm_div.banner_new_section h2{font-size:18px!important;font-weight:400;line-height:normal;color:#fff;text-align:center}
-.treatment_all_comm_div.banner_new_section{padding:30px 0 15px;background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('../images/banner_bg_mob.webp');background-color:#0c4679;background-size:cover;background-position:center;background-repeat:no-repeat;border-radius:0 0 20px 20px}
-.treatment_all_comm_div .talk_about_btn{width:80%;display:block;text-align:center;margin:15px auto 20px!important;padding:10px 30px;line-height:normal;color:#0c4679;border-radius:50px;font-weight:600;font-size:16px!important;text-align:center;border:none;background-color:#fff!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
-.treatment_all_comm_div.banner_new_section img{width:100%;padding:15px}
-.banner_list_item_google_rating{margin:auto;width:50%}
+@media (max-width:1480px){
+.banner-section .whatsapp-btn{font-size:12px}
 }
-@media (max-width:400px){
-.treatment_all_comm_div.banner_new_section h1{font-size:26px!important;font-weight:700;line-height:normal;color:#fff;text-align:center}
-.treatment_all_comm_div .talk_about_btn{width:80%;display:block;text-align:center;margin:15px auto 20px!important;padding:10px 30px;line-height:normal;color:#0c4679;border-radius:50px;font-weight:600;font-size:16px!important;text-align:center;border:none;background-color:#fff!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
-.treatment_all_comm_div.banner_new_section img{width:100%;padding:10px}
-.treatment_all_comm_div.banner_new_section h2{font-size:16px!important;font-weight:400;line-height:normal;color:#fff;text-align:center}
-}
-@media (max-width:375px){
-.treatment_all_comm_div.banner_new_section h1{font-size:26px!important;font-weight:700;line-height:normal;color:#fff;text-align:center}
-.treatment_all_comm_div.banner_new_section img{padding:10px}
-}
-@media (max-width:360px){
-.treatment_all_comm_div.banner_new_section h1{font-size:24px!important;font-weight:700;line-height:normal;color:#fff;text-align:center}
-.treatment_all_comm_div.banner_new_section h2{font-size:16px!important;font-weight:400;line-height:normal;color:#fff;text-align:center}
-}
-.offer_section{color:#fff!important;line-height:normal;font-size:18px;margin-bottom:0;border:1px solid #fff;display:inline-block;padding:10px 20px;font-weight:400}
-.offer_section{min-height:50px}
-.offer_section span{font-size:45px;font-weight:800;color:#fff}
-@media (max-width:1200px){
-.offer_section{font-size:12px!important}
-.offer_section span{font-size:24px}
-.banner_list_newhair li{display:inline;font-size:14px}
+@media (max-width:1280px){
+.banner-section .banner-content h1{font-size:16px;color:#fff;font-weight:400}
+.banner-section .banner-content h2{font-size:24px;color:#fff;font-weight:700}
+.banner-section .banner-content p{font-size: 14px;color:#fff;font-weight:400}
+.banner-section .banner-content .most-loved-para{font-size: 18px;margin-bottom:15px;margin-top:5px}
+.banner-section .whatsapp-btn{font-size:12px}
 }
 @media (max-width:600px){
-.offer_section{font-size:16px;padding:8px 20px;margin-bottom:10px}
-.offer_section{font-size:16px!important}
-.offer_section span{font-size:26px}
-}
-.banner_list_newhair{padding:0;margin:0;list-style:disc!important;line-height:normal;text-align:left;padding-inline-start:25px}
-.banner_list_newhair li{display:list-item;color:#fff;font-weight:400;font-size:16px;position:relative;line-height:normal;margin-bottom:6px}
-.banner_list_newhair li strong{font-weight:600}
-.banner_list_newhair li:first-child{padding-top:8px;padding-left:0}
-@media screen and (max-width:1440px){
-.banner_list_newhair li{font-size:12px}
-}
-@media screen and (max-width:768px){
-.banner_list_newhair{text-align:center;margin-bottom:10px;padding-inline-start:0px}
-.banner_list_newhair li{display:inline;font-size:14px}
-.banner_list_newhair li:first-child{padding-top:0;padding-left:0}
-.banner_list_newhair li:not(:last-child)::after{content:'•';margin:0 4px;color:#fff}
-}
-#banner_slider.owl-carousel .owl-item img{border-radius:16px}
-#banner_slider .owl-next,#banner_slider .owl-prev{display:none}
-#banner_slider .owl-prev{left:-15px;background-color:transparent!important}
-#banner_slider .owl-next{right:-15px;background-color:transparent!important}
-@media screen and (max-width:992px){
-#banner_slider .owl-next,#banner_slider .owl-prev{display:none}
+.banner-section{background:url(../images/banner-bg-hair-mob.webp) bottom center no-repeat;background-size:cover; padding: 0;}
+.banner-section .banner-content h1{font-size:14px}
+.banner-section .banner-content h2{font-size:24px}
+.banner-section .banner-content p{margin-bottom:10px}
+.banner-section .whatsapp-btn{font-size:14px;padding:8px 20px; margin-bottom:15px;margin-top:15px}
+.banner-section .google-review{top:80px}
+.banner-section .google-review p{font-size:10px}
+.banner-section .banner-content{margin-top:150px;margin-bottom:270px;padding: 30px 20px;}
 }
 
-/* T&c Section css*/
-.blue-strip-offer-section{text-align:right;color:#fff;font-size:14px;position:relative;bottom:-18px}
-@media (max-width:600px){
-.blue-strip-offer-section{text-align:right;padding-bottom:20px;margin-top:-155px;font-size:12px;font-weight:600;writing-mode:vertical-rl;text-orientation:mixed;transform:scale(1)}
-}
+
 /*==========================================*/
 /* offer-blue section css*/
 /*==========================================*/
@@ -159,10 +147,28 @@ a:hover{text-decoration: none;}
 .treatment_all_comm_div .screenshot_slider .owl-prev,.treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{position:absolute;top:-5px;height:100%}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-prev{left:-15px;background-color:transparent!important}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{right:-15px;background-color:transparent!important}
+.treatment_all_comm_div.before_after_slider .tab-btn{
+   padding: 5px 15px;
+   background-color: #fff;
+    border: 1px solid #757575;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+    .treatment_all_comm_div.before_after_slider .tab-btn.active {
+    color: rgb(255, 255, 255);
+    background: #154778;
+     border: 1px solid #154778;
+}
+
 @media(max-width:768px){
 .treatment_all_comm_div.before_after_slider{padding-top:30px}
 }
 @media(max-width:600px){
+.treatment_all_comm_div.before_after_slider .tab-btn
+{
+  padding: 2px 10px;
+}
 .treatment_all_comm_div.before_after_slider{padding-top:30px}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-prev{left:-5px;background-color:transparent!important}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{right:-5px;background-color:transparent!important}
@@ -239,7 +245,7 @@ a:hover{text-decoration: none;}
 }
 @media (max-width:600px){
 .treatment_all_comm_div.lets_talk_sec .talk_about_heading{font-size:21px!important;font-weight:600;margin-bottom:10PX;text-align:center}
-.treatment_all_comm_div.lets_talk_sec .talk_about_btn{margin:0 auto!important;width:90%;margin-bottom:0;line-height:normal;color:#fff;border-radius:50px;font-weight:600;font-size:18px!important;border:none;background-color:#0c4679!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
+.treatment_all_comm_div.lets_talk_sec .talk_about_btn{margin:0 auto!important;width:100%;margin-bottom:0;line-height:normal;color:#fff;border-radius:50px;font-weight:600;font-size:18px!important;border:none;background-color:#0c4679!important;box-shadow:0 4px 15px rgb(175 173 173 / 18%)}
 .treatment_all_comm_div.lets_talk_sec{margin-top:30px}
 }
 
@@ -461,7 +467,7 @@ a:hover{text-decoration: none;}
 .advance_skin_bg{margin-bottom:0;padding-top:30px}
 }
 .advance_main_heading{font-size:21px;font-weight:600;margin-bottom:5px;color:#000}
-.advance_main_subheading{font-size:18px;font-weight:600;color:#000}
+.advance_main_subheading{font-size:18px;font-weight:600;color:#000; margin-bottom: 0}
 .advance_list_list li{font-size:16px;padding:10px 5px;color:#212121}
 .advance_list_list{list-style-image:url('../images/list-style.webp');margin-left:0;padding-left:23px;padding-top:15px}
 .vl-icon-line{border-left:1px solid #554a46;height:125px;position:absolute;left:3%;margin-left:-3px;bottom:65px}
@@ -470,6 +476,35 @@ a:hover{text-decoration: none;}
 #advance_skin_slider .owl-next,#advance_skin_slider .owl-prev{position:absolute;top:-5px;height:100%}
 #advance_skin_slider .owl-prev{left:-15px;background-color:transparent!important}
 #advance_skin_slider .owl-next{right:-15px;background-color:transparent!important}
+#advance_skin_slider .owl-dots {
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+}
+
+#advance_skin_slider .owl-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+#advance_skin_slider .owl-dot.active,
+#advance_skin_slider .owl-dot:hover {
+  background: #154778; /* Change this to match your theme color */
+}
+
+@media screen and (max-width: 600px) {
+  #advance_skin_slider .owl-dot {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+  }
+}
+
 @media (max-width:1024px){
 .vl-icon-line{border-left:1px solid #554a46;height:125px;position:absolute;left:3.5%;margin-left:-3px;bottom:38px}
 }
