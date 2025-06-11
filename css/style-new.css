@@ -137,7 +137,7 @@ a:hover{text-decoration:none}
 .treatment_all_comm_div .screenshot_slider .owl-prev,.treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{position:absolute;top:-5px;height:100%}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-prev{left:-15px;background-color:transparent!important}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{right:-15px;background-color:transparent!important}
-.treatment_all_comm_div.before_after_slider .tab-btn{padding:5px 15px;background-color:#fff;border:1px solid #757575;font-size:16px;border-radius:4px}
+.treatment_all_comm_div.before_after_slider .tab-btn{padding:5px 15px;background-color:#fff;border:1px solid #757575;font-size:16px;border-radius:4px; color: #212121}
 .treatment_all_comm_div.before_after_slider .tab-btn.active{color:#fff;background:#154778;border:1px solid #154778}
 .no-items{font-size:18px;color:#999;text-align:center;padding:30px 0}
 @media(max-width:768px){
