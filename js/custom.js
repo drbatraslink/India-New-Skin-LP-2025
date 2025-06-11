@@ -27,7 +27,7 @@ $('.icon_banner_foot_slider').owlCarousel({
     },
   },
 });
-// Screenshot carousel initialization
+
 function initOwl() {
   $('.screenshot_slider').owlCarousel({
     loop: false,
@@ -48,29 +48,38 @@ function initOwl() {
   });
 }
 
-initOwl();
+$(document).ready(function () {
+  // Step 1: Clone all items and store for future filtering
+  const allItems = $('.screenshot_slider .item').clone();
 
-// Filter Tabs
-$('.tab-btn').on('click', function () {
-  var filter = $(this).data('filter');
-  $('.tab-btn').removeClass('active');
-  $(this).addClass('active');
+  // Step 2: Init Owl on page load (with all items)
+  initOwl();
 
-  $('.screenshot_slider .owl-item').each(function () {
-    var $item = $(this);
-    var category = $item.find('.item').attr('class');
+  // Step 3: Handle tab click
+  $('.tab-btn').on('click', function () {
+    const filter = $(this).data('filter');
 
-    if (filter === 'all') {
-      $item.show();
-    } else {
-      if (category.indexOf(filter) > -1) {
-        $item.show();
-      } else {
-        $item.hide();
-      }
+    $('.tab-btn').removeClass('active');
+    $(this).addClass('active');
+
+    // Destroy current Owl
+    $('.screenshot_slider').trigger('destroy.owl.carousel').removeClass('owl-loaded').html('');
+
+    // Filter items
+    let filteredItems = allItems;
+    if (filter !== 'all') {
+      filteredItems = allItems.filter(`.${filter}`);
     }
+
+    // Append filtered
+    $('.screenshot_slider').append(filteredItems);
+
+    // Re-init
+    initOwl();
   });
 });
+
+
 
 function toggleOwlCarousel() {
   const $slider = $('#skin_conditions_slider');
