@@ -145,8 +145,8 @@ a:hover{text-decoration:none}
 }
 @media(max-width:600px){
 .treatment_all_comm_div.before_after_slider .tab-btn{padding:2px 10px}
-.treatment_all_comm_div.before_after_slider .tab-btn{font-size:14px}
-.treatment_all_comm_div.before_after_slider .tab-btn.active{margin-bottom:5px}
+.treatment_all_comm_div.before_after_slider .tab-btn{font-size:14px;margin-bottom:5px; }
+.treatment_all_comm_div.before_after_slider .tab-btn.active{margin-bottom:5px; }
 .treatment_all_comm_div.before_after_slider{padding-top:30px}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-prev{left:-5px;background-color:transparent!important}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{right:-5px;background-color:transparent!important}
