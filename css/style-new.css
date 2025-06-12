@@ -152,38 +152,6 @@ a:hover{text-decoration:none}
 .treatment_all_comm_div.before_after_slider .screenshot_slider .owl-next{right:-5px;background-color:transparent!important}
 }
 
-/*==========================================*/
-/* Video css*/
-/*==========================================*/
-.treatment_all_comm_div.video_testmonilas_section{padding-top:40px}
-.treatment_all_comm_div.video_testmonilas_section .test-v-cls{bottom:10px;position:absolute;padding:5px 5px}
-.treatment_all_comm_div.video_testmonilas_section .resultsImg{position:absolute;bottom:210px;right:10px}
-.treatment_all_comm_div.video_testmonilas_section .resultsImg img{width:70px!important}
-.treatment_all_comm_div.video_testmonilas_section .test-v-para{font-size:16px!important;color:#fff;font-weight:400;margin-bottom:0}
-.treatment_all_comm_div.video_testmonilas_section .test-v-subheading{color:#b99863;font-size:18px!important;font-weight:600;margin-bottom:0}
-.treatment_all_comm_div.video_testmonilas_section .img-test-before-after-v{position:absolute;top:10px;right:10px}
-@media screen and (max-width:600px){
-.treatment_all_comm_div.video_testmonilas_section .resultsImg{position:absolute;bottom:360px;right:20px}
-.treatment_all_comm_div.video_testmonilas_section .resultsImg img{width:100px}
-.treatment_all_comm_div.video_testmonilas_section .mfp-iframe-holder .mfp-content{line-height:0;width:100%;max-width:900px;height:90%}
-.treatment_all_comm_div.video_testmonilas_section.video_testmonilas_section{padding-top:40px}
-}
-@media screen and (max-width:400px){
-.treatment_all_comm_div.video_testmonilas_section .resultsImg{position:absolute;bottom:290px;right:20px}
-.treatment_all_comm_div.video_testmonilas_section .resultsImg img{width:90px}
-}
-.treatment_all_comm_div.video_testmonilas_section .text-play-btn-img{width:30px!important;margin-right:10px!important}
-.treatment_all_comm_div.video_testmonilas_section .popup-vimeo{display:ruby;color:#fff;font-weight:600}
-.treatment_all_comm_div.video_testmonilas_section .popup-vimeo:hover{text-decoration:none}
-.treatment_all_comm_div.video_testmonilas_section #testimonilas_slider .owl-dots{display:none}
-.treatment_all_comm_div.video_testmonilas_section #testimonilas_slider .owl-item img{width:100%}
-#testimonilas_slider .owl-prev,.treatment_all_comm_div.video_testmonilas_section #testimonilas_slider .owl-next{position:absolute;top:-5px;height:100%}
-.treatment_all_comm_div.video_testmonilas_section #testimonilas_slider .owl-prev{left:-15px;background-color:transparent!important}
-.treatment_all_comm_div.video_testmonilas_section #testimonilas_slider .owl-next{right:-15px;background-color:transparent!important}
-@media screen and (max-width:600px){
-.treatment_all_comm_div.video_testmonilas_section #testimonilas_slider .owl-prev{left:-5px;background-color:transparent!important}
-.treatment_all_comm_div.video_testmonilas_section #testimonilas_slider .owl-next{right:-5px;background-color:transparent!important}
-}
 
 /*==========================================*/
 /* Blue Icon box section css*/
