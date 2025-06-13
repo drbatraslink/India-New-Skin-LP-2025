@@ -108,8 +108,9 @@ $(document).ready(function () {
 
 function toggleOwlCarousel() {
   const $slider = $('#skin_conditions_slider');
-  if($(window).width() < 768) {
-    if(!$slider.hasClass('owl-loaded')) {
+
+  if ($(window).width() < 768) {
+    if (!$slider.hasClass('owl-loaded')) {
       $slider.addClass('owl-carousel');
       $slider.owlCarousel({
         loop: false,
@@ -119,28 +120,53 @@ function toggleOwlCarousel() {
         smartSpeed: 500,
         autoplay: true,
         autoplayTimeout: 6000,
-        navText: ["<img src='images/previmage.webp' alt='003 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='003 next' width='50' height='50' />", ],
+        navText: [
+          "<img src='images/previmage.webp' alt='' width='50' height='50'>",
+          "<img src='images/nextimage.webp' alt='' width='50' height='50'>"
+        ],
         responsive: {
-          0: {
-            items: 3
-          },
-          480: {
-            items: 3
-          },
-          600: {
-            items: 4
-          }
+          0: { items: 3 },
+          480: { items: 3 },
+          600: { items: 4 }
+        },
+        onInitialized: function () {
+          // Add accessibility attributes
+          const $prev = $(".owl-nav .owl-prev");
+          const $next = $(".owl-nav .owl-next");
+
+          $prev.attr({
+            "role": "button",
+            "aria-label": "Previous slide",
+            "tabindex": "0"
+          });
+
+          $next.attr({
+            "role": "button",
+            "aria-label": "Next slide",
+            "tabindex": "0"
+          });
+
+          // Add keyboard support
+          $(".owl-nav div").on("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              $(this).trigger("click");
+            }
+          });
         }
       });
     }
   } else {
-    if($slider.hasClass('owl-loaded')) {
+    if ($slider.hasClass('owl-loaded')) {
       $slider.trigger('destroy.owl.carousel');
       $slider.removeClass('owl-carousel owl-loaded');
       $slider.find('.owl-stage-outer, .owl-stage, .owl-item, .owl-nav, .owl-dots').children().unwrap();
     }
   }
 }
+
+
+
 // Run on load and resize
 $(document).ready(toggleOwlCarousel);
 $(window).resize(toggleOwlCarousel);
