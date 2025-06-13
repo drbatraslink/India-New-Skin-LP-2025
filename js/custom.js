@@ -112,6 +112,7 @@ function toggleOwlCarousel() {
   if ($(window).width() < 768) {
     if (!$slider.hasClass('owl-loaded')) {
       $slider.addClass('owl-carousel');
+
       $slider.owlCarousel({
         loop: false,
         margin: 15,
@@ -130,7 +131,7 @@ function toggleOwlCarousel() {
           600: { items: 4 }
         },
         onInitialized: function () {
-          // Add accessibility attributes
+          // Add accessibility to navigation buttons
           const $prev = $(".owl-nav .owl-prev");
           const $next = $(".owl-nav .owl-next");
 
@@ -146,7 +147,7 @@ function toggleOwlCarousel() {
             "tabindex": "0"
           });
 
-          // Add keyboard support
+          // Enable keyboard control (Enter / Space)
           $(".owl-nav div").on("keydown", function (e) {
             if (e.key === "Enter" || e.key === " ") {
               e.preventDefault();
