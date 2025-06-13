@@ -49,14 +49,29 @@ function initOwl() {
     autoplay: true,
     autoplayTimeout: 6000,
     smartSpeed: 400,
-    navText: ["<img src='images/previmage.webp' alt='002 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='002 next' width='50' height='50' />", ],
+    navText: [
+      "<img src='images/previmage.webp' alt='002 prev' width='50' height='50' />",
+      "<img src='images/nextimage.webp' alt='002 next' width='50' height='50' />"
+    ],
     responsive: {
       0: { items: 1 },
       768: { items: 2 },
       1200: { items: 3 }
+    },
+    onInitialized: function () {
+      // Add ARIA role to nav buttons
+      $(".owl-nav .owl-prev").attr({
+        "role": "button",
+        "aria-label": "Previous slide"
+      });
+      $(".owl-nav .owl-next").attr({
+        "role": "button",
+        "aria-label": "Next slide"
+      });
     }
   });
 }
+
 
 $(document).ready(function () {
   // Step 1: Clone all items and store for future filtering
