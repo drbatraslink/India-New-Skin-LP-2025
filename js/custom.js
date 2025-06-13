@@ -1,3 +1,16 @@
+// Function to enhance carousel nav accessibility
+function enhanceCarouselAccessibility() {
+  $('.owl-nav .owl-prev, .owl-nav .owl-next')
+    .attr('role', 'button')
+    .attr('tabindex', '0')
+    .on('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        $(this).trigger('click');
+      }
+    });
+}
+
 // Screenshot carousel initialization (autoplay only on mobile)
 const isMobile = window.innerWidth < 1024;
 $('.icon_banner_foot_slider').owlCarousel({
@@ -36,10 +49,7 @@ function initOwl() {
     autoplay: true,
     autoplayTimeout: 6000,
     smartSpeed: 400,
-    navText: [
-      "<img src='images/previmage.webp' alt='prev' width='50' height='50' />",
-      "<img src='images/nextimage.webp' alt='next' width='50' height='50' />"
-    ],
+    navText: ["<img src='images/previmage.webp' alt='002 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='002 next' width='50' height='50' />", ],
     responsive: {
       0: { items: 1 },
       768: { items: 2 },
@@ -94,7 +104,7 @@ function toggleOwlCarousel() {
         smartSpeed: 500,
         autoplay: true,
         autoplayTimeout: 6000,
-        navText: ["<img src='images/previmage.webp' alt='prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='next' width='50' height='50' />"],
+        navText: ["<img src='images/previmage.webp' alt='003 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='003 next' width='50' height='50' />", ],
         responsive: {
           0: {
             items: 3
@@ -128,7 +138,7 @@ $('#testimonilas_slider').owlCarousel({
   autoplay: false,
   autoplayTimeout: 4000,
   smartSpeed: 400,
-  navText: ["<img src='images/previmage.webp' alt='002 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='002 next' width='50' height='50' />", ],
+  navText: ["<img src='images/previmage.webp' alt='005 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='005 next' width='50' height='50' />", ],
   responsive: {
     0: {
       items: 1
@@ -157,35 +167,7 @@ $('#advance_skin_slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 8000,
   smartSpeed: 400,
-  navText: ["<img src='images/previmage.webp' alt='003 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='003 next' width='50' height='50' />", ],
-  responsive: {
-    0: {
-      items: 1
-    },
-    600: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    1024: {
-      items: 1
-    },
-    1200: {
-      items: 1
-    },
-  },
-});
-// Advance skin carousel initialization
-$('#banner_slider').owlCarousel({
-  loop: false,
-  responsiveClass: true,
-  nav: true,
-  margin: 0,
-  autoplay: true,
-  autoplayTimeout: 8000,
-  smartSpeed: 400,
-  navText: ["<img src='images/previmage.webp' alt='003 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='003 next' width='50' height='50' />", ],
+  navText: ["<img src='images/previmage.webp' alt='006 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='006 next' width='50' height='50' />", ],
   responsive: {
     0: {
       items: 1
@@ -213,7 +195,7 @@ $('#googlerating_slider').owlCarousel({
   autoplay: true,
   autoplayTimeout: 8000,
   smartSpeed: 400,
-  navText: ["<img src='images/previmage.webp' alt='004 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='004 next' width='50' height='50' />", ],
+  navText: ["<img src='images/previmage.webp' alt='007 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='007 next' width='50' height='50' />", ],
   responsive: {
     0: {
       items: 1

@@ -445,9 +445,10 @@ a:hover{text-decoration:none}
 #advance_skin_slider .owl-next,#advance_skin_slider .owl-prev{position:absolute;top:-5px;height:100%}
 #advance_skin_slider .owl-prev{left:-15px;background-color:transparent!important}
 #advance_skin_slider .owl-next{right:-15px;background-color:transparent!important}
-#advance_skin_slider .owl-dots{display:block;text-align:center;margin-top:0}
-#advance_skin_slider .owl-dot{display:inline-block;width:10px;height:10px;margin:0 5px;background:#ccc;border-radius:50%;transition:background .3s ease}
-#advance_skin_slider .owl-dot.active,#advance_skin_slider .owl-dot:hover{background:#154778}
+#advance_skin_slider .owl-dots{display:block;text-align:center}
+#advance_skin_slider .owl-dot{display:inline-block;margin:10px 5px 0}
+#advance_skin_slider .owl-dot span{width:14px;height:14px;background-color:#9c9c9c;display:block;border-radius:50%;transition:background-color .3s ease}
+#advance_skin_slider .owl-dot.active span{background-color:#0c4679;border:2px solid #fff;outline:2px solid #0c4679}
 @media screen and (max-width:600px){
 #advance_skin_slider .owl-dot{width:8px;height:8px;margin:0 4px}
 }
@@ -466,6 +467,8 @@ a:hover{text-decoration:none}
 @media screen and (max-width:600px){
 .specialised_skin_treatments_sec{margin-top:30px}
 #advance_skin_slider .owl-next,#advance_skin_slider .owl-prev{position:absolute;top:-160px;height:100%}
+#advance_skin_slider .owl-dot{display:inline-block;margin:10px 7px 0}
+#advance_skin_slider .owl-dot span{width:13px;height:13px}
 }
 
 /*==========================================*/
