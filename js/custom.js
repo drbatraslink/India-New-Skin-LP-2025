@@ -121,39 +121,17 @@ function toggleOwlCarousel() {
         smartSpeed: 500,
         autoplay: true,
         autoplayTimeout: 6000,
+
+        // ✅ Accessible navigation buttons
         navText: [
-          "<img src='images/previmage.webp' alt='' width='50' height='50'>",
-          "<img src='images/nextimage.webp' alt='' width='50' height='50'>"
+          "<button class='owl-prev-btn' aria-label='Previous slide'><img src='images/previmage.webp' alt=''></button>",
+          "<button class='owl-next-btn' aria-label='Next slide'><img src='images/nextimage.webp' alt=''></button>"
         ],
+
         responsive: {
           0: { items: 3 },
           480: { items: 3 },
           600: { items: 4 }
-        },
-        onInitialized: function () {
-          // Add accessibility to navigation buttons
-          const $prev = $(".owl-nav .owl-prev");
-          const $next = $(".owl-nav .owl-next");
-
-          $prev.attr({
-            "role": "button",
-            "aria-label": "Previous slide",
-            "tabindex": "0"
-          });
-
-          $next.attr({
-            "role": "button",
-            "aria-label": "Next slide",
-            "tabindex": "0"
-          });
-
-          // Enable keyboard control (Enter / Space)
-          $(".owl-nav div").on("keydown", function (e) {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
-              $(this).trigger("click");
-            }
-          });
         }
       });
     }
@@ -165,8 +143,6 @@ function toggleOwlCarousel() {
     }
   }
 }
-
-
 
 // Run on load and resize
 $(document).ready(toggleOwlCarousel);
