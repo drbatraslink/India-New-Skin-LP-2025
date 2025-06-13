@@ -72,7 +72,6 @@ function initOwl() {
   });
 }
 
-
 $(document).ready(function () {
   // Step 1: Clone all items and store for future filtering
   const allItems = $('.screenshot_slider .item').clone();
@@ -104,13 +103,13 @@ $(document).ready(function () {
   });
 });
 
-
-
 function toggleOwlCarousel() {
   const $slider = $('#skin_conditions_slider');
-  if($(window).width() < 768) {
-    if(!$slider.hasClass('owl-loaded')) {
+
+  if ($(window).width() < 768) {
+    if (!$slider.hasClass('owl-loaded')) {
       $slider.addClass('owl-carousel');
+
       $slider.owlCarousel({
         loop: false,
         margin: 15,
@@ -119,28 +118,41 @@ function toggleOwlCarousel() {
         smartSpeed: 500,
         autoplay: true,
         autoplayTimeout: 6000,
-        navText: ["<img src='images/previmage.webp' alt='003 prev' width='50' height='50' />", "<img src='images/nextimage.webp' alt='003 next' width='50' height='50' />", ],
+
+        // Accessible navigation buttons
+        navText: [
+          "<button class='owl-prev-btn' aria-label='Previous slide'><img src='images/previmage.webp' alt=''></button>",
+          "<button class='owl-next-btn' aria-label='Next slide'><img src='images/nextimage.webp' alt=''></button>"
+        ],
+
         responsive: {
-          0: {
-            items: 3
-          },
-          480: {
-            items: 3
-          },
-          600: {
-            items: 4
-          }
+          0: { items: 3 },
+          480: { items: 3 },
+          600: { items: 4 }
+        },
+
+        // When Owl Carousel is initialized, add aria-labels to the dots
+        onInitialized: function (event) {
+          const $dots = $(event.target).find('.owl-dot');
+          $dots.each(function(index) {
+            $(this)
+              .attr('role', 'button') // explicitly declare it's a button
+              .attr('aria-label', 'Go to slide ' + (index + 1));
+          });
         }
       });
     }
   } else {
-    if($slider.hasClass('owl-loaded')) {
+    if ($slider.hasClass('owl-loaded')) {
       $slider.trigger('destroy.owl.carousel');
       $slider.removeClass('owl-carousel owl-loaded');
       $slider.find('.owl-stage-outer, .owl-stage, .owl-item, .owl-nav, .owl-dots').children().unwrap();
     }
   }
 }
+
+
+
 // Run on load and resize
 $(document).ready(toggleOwlCarousel);
 $(window).resize(toggleOwlCarousel);
